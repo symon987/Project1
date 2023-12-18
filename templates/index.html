@@ -26,8 +26,9 @@
     <h4>Started Dec 3, 2023</h4>
     <label for="textinput">User</label>
     <input type="text" id="textinput" placeholder="Name">
-    <button id="startbutton">enter</button>
-    </div>
+    <a href="{{ url_for('link2') }}">
+        <button id="startbutton">enter</button>
+    </a>    </div>
 
 
 <script>
@@ -35,7 +36,7 @@
  let file = document.getElementById('startbutton');
     file.addEventListener("click", function(event) {
             console.log('Username', theinput.value);
-            window.location.replace("/testbeginfilenew.html");
+            window.location.replace("/link2");
     })
 </script>
 </body>

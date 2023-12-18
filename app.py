@@ -1,14 +1,10 @@
-import Flask as flask
+from flask import Flask, render_template
+app = Flask(__name__)
 
-
-app = flask(app)
-
-app.route('/')
+@app.route('/')
 def link1():
-    render_template('link.html')
+    return render_template('index.html')
 
-app.route('/link2')
+@app.route('/2')
 def link2():
-    render_template('link2.html')
-
-
+    return render_template('index2.html')
